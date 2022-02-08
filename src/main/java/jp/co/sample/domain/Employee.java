@@ -2,7 +2,6 @@ package jp.co.sample.domain;
 
 import java.util.Date;
 
-
 public class Employee {
 	private Integer id;
 	private String name;
@@ -15,15 +14,16 @@ public class Employee {
 	private String telephone;
 	private Integer salary;
 	private String characteristics;
-	private Integer depenrntsCount;
-	
-	
+	private Integer dependentsCount;
+
 	public Employee() {
+		super();
+		// TODO 自動生成されたコンストラクター・スタブ
 	}
 
-    public Employee(Integer id, String name, String image, String gender, Date hireDate, String mailAddress,
+	public Employee(Integer id, String name, String image, String gender, Date hireDate, String mailAddress,
 			String zipCode, String address, String telephone, Integer salary, String characteristics,
-			Integer depenrntsCount) {
+			Integer dependentsCount) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -36,7 +36,7 @@ public class Employee {
 		this.telephone = telephone;
 		this.salary = salary;
 		this.characteristics = characteristics;
-		this.depenrntsCount = depenrntsCount;
+		this.dependentsCount = dependentsCount;
 	}
 
 	public Integer getId() {
@@ -127,16 +127,19 @@ public class Employee {
 		this.characteristics = characteristics;
 	}
 
-	public Integer getDepenrntsCount() {
-		return depenrntsCount;
+	public Integer getDependentsCount() {
+		return dependentsCount;
 	}
 
-	public void setDepenrntsCount(Integer depenrntsCount) {
-		this.depenrntsCount = depenrntsCount;
+	public void setDependentsCount(Integer dependentsCount) {
+		this.dependentsCount = dependentsCount;
 	}
-    
-    
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", image=" + image + ", gender=" + gender + ", hireDate="
+				+ hireDate + ", mailAddress=" + mailAddress + ", zipCode=" + zipCode + ", address=" + address
+				+ ", telephone=" + telephone + ", salary=" + salary + ", characteristics=" + characteristics
+				+ ", dependentsCount=" + dependentsCount + "]";
+	}
 }
