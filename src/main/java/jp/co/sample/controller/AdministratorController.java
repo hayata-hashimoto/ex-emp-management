@@ -10,14 +10,14 @@ import jp.co.sample.service.AdoministratorService;
 
 @Controller
 @RequestMapping("/")
-public class AdoministratorController {
+public class AdministratorController {
 	
 	@Autowired
-	private AdoministratorService adoministratorService;
+	private AdministratorService administratorService;
 	
 	@ModelAttribute 
-	public InsertAdoministratorForm setUpInsertAdministratorForm() {
-		return new InsertAdoministratorForm();
+	public InsertAdministratorForm setUpInsertAdministratorForm() {
+		return new InsertAdministratorForm();
 	}
 	
 	
