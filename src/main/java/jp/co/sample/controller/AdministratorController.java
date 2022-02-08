@@ -13,7 +13,7 @@ import jp.co.sample.service.AdoministratorService;
 public class AdministratorController {
 	
 	@Autowired
-	private AdministratorService administratorService;
+	private AdoministratorService administratorService;
 	
 	@ModelAttribute 
 	public InsertAdministratorForm setUpInsertAdministratorForm() {
