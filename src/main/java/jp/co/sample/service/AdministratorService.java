@@ -19,3 +19,4 @@ public class AdministratorService {
 		administratorRepository.insert(administrator);
 	}	
 }
+
