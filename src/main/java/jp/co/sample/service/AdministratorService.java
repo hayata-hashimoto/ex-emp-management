@@ -17,5 +17,6 @@ public class AdministratorService {
 	
 	public void insert(Administrator administrator) {
 		administratorRepository.insert(administrator);
-	}
+	}	
 }
+
