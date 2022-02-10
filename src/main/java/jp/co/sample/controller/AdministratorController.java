@@ -71,4 +71,9 @@ public class AdministratorController {
 		return "forward:/employee/showList";
 	}
 	
+	@RequestMapping("/logout")
+	public String logout() {
+		session.invalidate();
+		return "redirect:/";
+	}
 }
